@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        NetUtil.cargarCertificados(this@MainActivity)
         checkRegisteredUser()
+        NetUtil.cargarCertificados(this@MainActivity)
         scheduleJob(this@MainActivity)
         NetUtil.lanzarListener(this@MainActivity)
 
